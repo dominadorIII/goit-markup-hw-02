@@ -1,80 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8" />
     <meta
       name="WebStudio"
       content="WebStudio Page Layout Home work for GoIT FSOn2_ph"
-    >
+    />
     <title>WebStudio</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header Section -->
+
     <header>
-      <nav>
-        <a href="https://dominadoriii.github.io/goit-markup-hw-01">WebStudio</a>
-        <ul>
-          <li>
-            <a href="https://dominadoriii.github.io/goit-markup-hw-01"
-              >Studio</a
-            >
+      <nav class="header-nav">
+        <a class="header-nav-logo" href="./index.html">
+          <p>
+            <span class="logo-web">Web</span>
+            <span class="logo-studio">Studio</span>
+          </p>
+        </a>
+        <ul class="header-nav-menu">
+          <li class="header-nav-menu-studio active">
+            <a href="./index.html">Studio</a>
           </li>
-          <li>
-            <a href="https://dominadoriii.github.io/goit-markup-hw-01"
-              >Portfolio</a
-            >
+          <li class="header-nav-menu-portfolio">
+            <a href="./portfolio.html">Portfolio</a>
           </li>
-          <li>
-            <a href="https://dominadoriii.github.io/goit-markup-hw-01"
-              >Contacts
-            </a>
+          <li class="header-nav-menu-contacts">
+            <a href="/">Contacts </a>
           </li>
         </ul>
       </nav>
-      <address>
-        <ul>
-          <li>
+      <address class="address">
+        <ul class="adress-details">
+          <li class="address-details-mail">
             <a href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li>
+          <li class="address-details-tel">
             <a href="tel:+380441111111">+38044 111 11 11</a>
           </li>
         </ul>
       </address>
     </header>
+
     <!-- Main Section -->
+
     <main>
       <!-- Hero Section -->
+
       <section class="hero">
-        <h1>Effective Solutions<br>for Your Business</h1>
-        <button type="button">Order Service</button>
+        <h1>Effective Solutions<br />for Your Business</h1>
+        <button class="button-order-services" type="button">
+          Order Service
+        </button>
       </section>
+
       <!-- Features Section -->
-      <section class="features">
+
+      <section class="section-features">
         <h2>Features</h2>
-        <ul>
-          <li>
+        <ul class="features">
+          <li class="feature-item">
             <h3>Strategy</h3>
             <p>
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
+          <li class="feature-item">
             <h3>Punctuality</h3>
             <p>
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
+          <li class="feature-item">
             <h3>Diligence</h3>
             <p>
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
+          <li class="feature-item">
             <h3>Technologies</h3>
             <p>
               Design practice focused on digital experiences. We bring forth a
@@ -83,70 +97,81 @@
           </li>
         </ul>
       </section>
+
       <!-- What Are We Doing Section-->
-      <section>
+
+      <section class="section-what-are-we-doing">
         <h2>What are we doing</h2>
-        <ul>
-          <li>
-            <img src="./images/desktop-image.jpg" alt="desktop" width="360">
+        <ul class="what-are-we-doing">
+          <li class="what-are-we-doing-item">
+            <img src="./images/desktop-image.jpg" alt="desktop" width="360" />
           </li>
-          <li>
+          <li class="what-are-we-doing-item">
             <img
               src="./images/mobilephone-image1.jpg"
               alt="mobile phone"
               width="360"
-            >
+            />
           </li>
-          <li>
+          <li class="what-are-we-doing-item">
             <img
               src="./images/mobilephone-image2.jpg"
               alt="mobilephone"
               width="360"
-            >
+            />
           </li>
         </ul>
       </section>
+
       <!-- Our Team Section-->
-      <section>
+
+      <section class="section-our-team">
         <h2>Our Team</h2>
-        <ul class="team-card">
-          <li>
+        <ul class="our-team-card">
+          <li class="our-team-card-item">
             <img
               src="./images/product-designer.jpg"
               alt="product designer"
               width="264"
-            >
+            />
             <h3>Mark Guerrero</h3>
             <p>Product Designer</p>
           </li>
-          <li>
+          <li class="our-team-card-item">
             <img
               src="./images/frontend-developer.jpg"
               alt="frontend developer"
               width="264"
-            >
+            />
             <h3>Tom Ford</h3>
             <p>Frontend Developer</p>
           </li>
-          <li>
-            <img src="./images/marketing.jpg" alt="marketing" width="264" >
+          <li class="our-team-card-item">
+            <img src="./images/marketing.jpg" alt="marketing" width="264" />
             <h3>Camila Garcia</h3>
             <p>Marketing</p>
           </li>
-          <li>
-            <img src="./images/ui-designer.jpg" alt="ui designer" width="264" >
+          <li class="our-team-card-item">
+            <img src="./images/ui-designer.jpg" alt="ui designer" width="264" />
             <h3>Daniel Wilson</h3>
             <p>UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
+
     <!-- Footer Section -->
+
     <footer>
-      <a href="https://dominadoriii.github.io/goit-markup-hw-01">WebStudio</a>
-      <p>
-        Increase the flow of customers and<br>for your business with
-        digital<br>marketing & growth solutions.
+      <a class="header-nav-logo" href="./index.html">
+        <p class="logo-webstudio">
+          <span class="logo-web">Web</span>
+          <span class="logo-studio-footer">Studio</span>
+        </p>
+      </a>
+      <p class="footer-body">
+        Increase the flow of customers and<br />for your business with
+        digital<br />marketing & growth solutions.
       </p>
     </footer>
   </body>

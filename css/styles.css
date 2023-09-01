@@ -24,7 +24,7 @@
     --color-filter-button-font: #4D5AE5;
     --color-filter-button-boder: #E7E9FC;
     --color-filter-button-background: #F4F4FD;
-    --color-portfolio-project-card-font: #2E2F42;
+    --color-portfolio-project-font: #2E2F42;
 }
 body{
     font-family: "Roboto", sans-serif;
@@ -84,14 +84,14 @@ body{
     --color-header-navmenu-font: #404BBF;
     color: var(--color-header-navmenu-font);
 }
-.header-nav-menu-studio.active{
+.header-nav-menu-item.active{
     --color-header-navmenu-font: #404BBF;
     color: var(--color-header-navmenu-font);
 }
-.header-nav-menu-portfolio.active{
+/*.header-nav-menu-portfolio.active{
     --color-header-navmenu-font: #404BBF;
     color: var(--color-header-navmenu-font);
-}
+}*/
 
 /* Header Address */
 
@@ -135,10 +135,16 @@ body{
     letter-spacing: 1.12px;
 }
 .button-order-services{
+    display: inline-flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+
     cursor: pointer;
     border-radius: 4px;
     background: var(--color-button-order-service-background);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
 
     /* Button Text */
     font-size: 16px;
@@ -186,10 +192,10 @@ body{
 
 /* What are we doing Section */
 
-.what-are-we-doing-list {
+.what-services-list {
     list-style: none;
 }
-.section-what-are-we-doing-title{
+.section-what-services-title{
     color: var(--color-whatarewedoing-h2);
     text-align: center;
         /* Header 2 */
@@ -201,10 +207,10 @@ body{
 
 /* Our Team Section */
 
-.section-our-team{
+.section-team{
     background-color: var(--color-ourteam-background);
 }
-.section-our-team-title{
+.section-team-title{
     color: var(--color-ourteam-h2);
     text-align: center;
         /* Header 2 */
@@ -213,7 +219,7 @@ body{
     letter-spacing: 0.72px;
     text-transform: capitalize;
 }
-.our-team-card-list-item-title{
+.team-list-item-title{
     color: var(--color-ourteam-h3);
     text-align: center;
         /* Header 3 */
@@ -222,7 +228,7 @@ body{
     line-height: 1.2em;
     letter-spacing: 0.4px;
 }
-.our-team-card-list-item-body{
+.team-list-item-body{
     text-align: center;
         /* Body */
     font-size: 16px;
@@ -230,7 +236,7 @@ body{
     letter-spacing: 0.32px;
 
 }
-.our-team-card-list{
+.team-list{
     list-style: none;
 }
 
@@ -265,10 +271,15 @@ footer{
 .section-categories-title{
     display: none;
 }
-.categories-filter-list{
+.categories-list{
     list-style: none;
 }
-.categories-filter-list-item-button{
+.categories-list-item-button{
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+
     cursor: pointer;
     border-radius: 4px;
     border: 1px solid var(--color-filter-button-boder);
@@ -283,7 +294,7 @@ footer{
     line-height: 1.5em;
     letter-spacing: 0.64px;
 }
-.categories-filter-list-item-button:hover{
+.categories-list-item-button:hover{
     --color-filter-button-font:#FFF;
     color: var(--color-filter-button-font);
 
@@ -294,7 +305,7 @@ footer{
      0px 2px 1px 0px  rgba(0, 0, 0, 0.08), 
      0px 3px 1px 0px  rgba(0, 0, 0, 0.10);
 }  
-.categories-filter-list-item-button:active{
+.categories-list-item-button:active{
     --color-filter-button-font: #FFF;
     color: var(--color-filter-button-font);
 
@@ -305,7 +316,7 @@ footer{
         0px 2px 1px 0px rgba(0, 0, 0, 0.08),
         0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
-.categories-filter-list-item-button:focus{
+.categories-list-item-button:focus{
     --color-filter-button-font: #FFF;
     color: var(--color-filter-button-font);
 
@@ -326,7 +337,7 @@ footer{
     list-style: none;
 }
 .project-list-item-title{
-    color: var(--color-portfolio-project-card-font);
+    color: var(--color-portfolio-project-font);
         /* Header 3 */
     font-size: 20px;
     font-weight: 500;

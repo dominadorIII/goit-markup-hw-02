@@ -4,42 +4,38 @@
     box-sizing: border-box;
 }
 :root{
-    --color-hero-background: #2E2F42;
-    --color-body: #434455;
-    --color-h1-font: #fff;
-    --color-button-order-service-font: #fff;
-    --color-button-order-service-background: #4D5AE5;
-    --color-features-h3: #2E2F42;
-    --color-whatarewedoing-h2: #2E2F42;
-    --color-ourteam-background: #F4F4FD;
-    --color-ourteam-h2: #2E2F42;
-    --color-ourteam-h3: #2E2F42;
-    --color-logo-web: #4D5AE5;
-    --color-logo-studio: #2E2F42;
-    --color-logo-studio-footer: #F4F4FD;
-    --color-footer-body-font: #F4F4FD;
-    --color-footer-background: #2E2F42;
-    --color-header-navmenu-font: #2E2F42;
-    --color-address-detail-font: #434455;
-    --color-filter-button-font: #4D5AE5;
-    --color-filter-button-boder: #E7E9FC;
-    --color-filter-button-background: #F4F4FD;
-    --color-portfolio-project-font: #2E2F42;
+    --iris: #4d5ae5;
+    --navyblue: #2e2f42;
+    --black: black;
+    --ocean: #404bbf;
+    --white: #ffffff;
+    --slate: #434455;
+    --cornflower: #e7e9fc;
+    --cloud: #f4f4fd;
+    --green: #31d0aa;
+    --lightslate: #8e8f99;
+    --navybluemodal: #2e2f42;
+    --grey: #2e2f42;
+    --dairy: #fcfcfc;
+
 }
 body{
     font-family: "Roboto", sans-serif;
-    color:var(--color-body);
+    color:var(--slate);
+}
+address{
+    font-style: normal;
 }
 
 /*Header*/
 
 /* Logo */
 
-.logo{
+.logo {
     text-decoration: none;
 }
 .logo-web{
-    color: var(--color-logo-web);
+    color: var(--iris);
     font-family: Raleway;
     font-size: 18px;
     font-weight: 800;
@@ -48,7 +44,7 @@ body{
     text-transform: uppercase;
 }
 .logo-studio{
-    color: var(--color-logo-studio);
+    color: var(--navyblue);
     font-family: Raleway;
     font-size: 18px;
     font-weight: 800;
@@ -59,11 +55,11 @@ body{
 
 /* Header Nav Menu */
 
-.header-nav-menu{
+.header-nav-menu {
     list-style: none;
 }
-.header-nav-menu-item-link{
-    color: var(--color-header-navmenu-font);
+.header-nav-menu-item-link {
+    color: var(--navyblue);
     text-decoration: none;
     /* Body Medium */
     font-size: 16px;
@@ -72,26 +68,19 @@ body{
     letter-spacing: 0.32px;
 
 }
-.header-nav-menu-item-link:hover{
-    --color-header-navmenu-font: #404BBF;
-    color: var(--color-header-navmenu-font);
+.header-nav-menu-item-link:hover {
+    color: var(--ocean);
 }
-.header-nav-menu-item-link:focus{
-    --color-header-navmenu-font:#404BBF;
-    color: var(--color-header-navmenu-font);
+.header-nav-menu-item-link:focus {
+    color: var(--ocean);
 }
-.header-nav-menu-item-link:active{
-    --color-header-navmenu-font: #404BBF;
-    color: var(--color-header-navmenu-font);
+.header-nav-menu-item-link:active {
+    color: var(--ocean);
 }
 .header-nav-menu-item.active{
-    --color-header-navmenu-font: #404BBF;
-    color: var(--color-header-navmenu-font);
+    --navyblue: #404BBF;
+    color: var(--navyblue);
 }
-/*.header-nav-menu-portfolio.active{
-    --color-header-navmenu-font: #404BBF;
-    color: var(--color-header-navmenu-font);
-}*/
 
 /* Header Address */
 
@@ -99,7 +88,7 @@ body{
     list-style: none;
 }
 .adress-detail-list-item-link{
-    color: var(--color-address-detail-font);
+    color: var(--slate);
     text-decoration: none;
     /* Body */
     font-size: 16px;
@@ -107,16 +96,16 @@ body{
     letter-spacing: 0.32px;
 }
 .adress-detail-list-item-link:hover{
-    --color-address-detail-font: #404BBF;
-    color: var(--color-address-detail-font);
+    --slate: #404BBF;
+    color: var(--slate);
 }
 .adress-detail-list-item-link:focus{
-    --color-address-detail-font: #404BBF;
-    color: var(--color-address-detail-font);
+    --slate: #404BBF;
+    color: var(--slate);
 }
 .adress-detail-list-item-link:active{
-    --color-address-detail-font: #404BBF;
-    color: var(--color-address-detail-font);
+    --slate: #404BBF;
+    color: var(--slate);
 }
 
 /* Index Main Body */ 
@@ -124,11 +113,11 @@ body{
 /* Hero Section */
 
 .hero{
-    background-color: var(--color-hero-background);
+    background-color: var(--navyblue);
 }
 
 .main-page-header{
-    color: var(--color-h1-font);
+    color: var(--white);
     text-align: center;
     font-size: 56px;
     line-height: 1.07em;
@@ -142,7 +131,7 @@ body{
 
     cursor: pointer;
     border-radius: 4px;
-    background: var(--color-button-order-service-background);
+    background: var(--iris);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
 
@@ -152,19 +141,19 @@ body{
     font-weight: 500;
     line-height: 1.5em;
     letter-spacing: 0.64px;
-    color: var(--color-button-order-service-font);
+    color: var(--white);
 }
 .button-order-services:hover{
-    --color-button-order-service-background: #404BBF;
-    background: var(--color-button-order-service-background);
+    background: var(--ocean);
+    border-color: var(--ocean);
 }
 .button-order-services:focus{
-    --color-button-order-service-background: #404BBF;
-    background: var(--color-button-order-service-background);
+    background: var(--ocean);
+    border-color: var(--ocean);
 }
 .button-order-services:active{
-    --color-button-order-service-background: #404BBF;
-    background: var(--color-button-order-service-background);
+    background: var(--ocean);
+    border-color: var(--ocean);
 }
 
 /* Feature Section */
@@ -181,10 +170,11 @@ body{
     font-weight: 500;
     line-height: 1.2em;
     letter-spacing: 0.4px;
-    color: var(--color-features-h3);
+    color: var(--navyblue);
 }
 .feature-list-item-body{
     /* Body */
+    color: var(--slate);
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.32px;
@@ -192,11 +182,11 @@ body{
 
 /* What are we doing Section */
 
-.what-services-list {
+.services-list{
     list-style: none;
 }
-.section-what-services-title{
-    color: var(--color-whatarewedoing-h2);
+.section-services-title{
+    color: var(--navyblue);
     text-align: center;
         /* Header 2 */
     font-size: 36px;
@@ -208,10 +198,10 @@ body{
 /* Our Team Section */
 
 .section-team{
-    background-color: var(--color-ourteam-background);
+    background-color: var(--cloud);
 }
 .section-team-title{
-    color: var(--color-ourteam-h2);
+    color: var(--navyblue);
     text-align: center;
         /* Header 2 */
     font-size: 36px;
@@ -220,7 +210,7 @@ body{
     text-transform: capitalize;
 }
 .team-list-item-title{
-    color: var(--color-ourteam-h3);
+    color: var(--navyblue);
     text-align: center;
         /* Header 3 */
     font-size: 20px;
@@ -231,6 +221,7 @@ body{
 .team-list-item-body{
     text-align: center;
         /* Body */
+    color: var(--slate);
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.32px;
@@ -243,17 +234,17 @@ body{
 /* Footer */
 
 footer{
-    background-color: var(--color-footer-background);
+    background-color: var(--navyblue);
 }
 .footer-body{
-    color:var(--color-footer-body-font);
+    color:var(--cloud);
         /* Body */
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.32px;
 }
 .logo-studio-footer{
-    color: var(--color-logo-studio-footer);
+    color: var(--cloud);
     font-family: Raleway;
     font-size: 18px;
     font-weight: 800;
@@ -282,10 +273,10 @@ footer{
 
     cursor: pointer;
     border-radius: 4px;
-    border: 1px solid var(--color-filter-button-boder);
-    background: var(--color-filter-button-background);
+    border: 1px solid var(--cornflower);
+    background: var(--cloud);
 
-    color: var(--color-filter-button-font);
+    color: var(--iris);
     text-align: center;
         /* Button Text */
     font-size: 16px;
@@ -295,33 +286,33 @@ footer{
     letter-spacing: 0.64px;
 }
 .categories-list-item-button:hover{
-    --color-filter-button-font:#FFF;
-    color: var(--color-filter-button-font);
+    --iris:#FFF;
+    color: var(--iris);
 
-    --color-filter-button-background:#404BBF;
-    background: var(--color-filter-button-background);
+    background: var(--ocean);
+    border-color: var(--ocean);
 
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 
      0px 2px 1px 0px  rgba(0, 0, 0, 0.08), 
      0px 3px 1px 0px  rgba(0, 0, 0, 0.10);
 }  
 .categories-list-item-button:active{
-    --color-filter-button-font: #FFF;
-    color: var(--color-filter-button-font);
+    --iris: #FFF;
+    color: var(--iris);
 
-    --color-filter-button-background: #404BBF;
-    background: var(--color-filter-button-background);
+    background: var(--ocean);
+    border-color: var(--ocean);
 
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
         0px 2px 1px 0px rgba(0, 0, 0, 0.08),
         0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 .categories-list-item-button:focus{
-    --color-filter-button-font: #FFF;
-    color: var(--color-filter-button-font);
+    --iris: #FFF;
+    color: var(--iris);
 
-    --color-filter-button-background: #404BBF;
-    background: var(--color-filter-button-background);
+    background: var(--ocean);
+    border-color: var(--ocean);
 
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
         0px 2px 1px 0px rgba(0, 0, 0, 0.08),
@@ -337,7 +328,7 @@ footer{
     list-style: none;
 }
 .project-list-item-title{
-    color: var(--color-portfolio-project-font);
+    color: var(--navyblue);
         /* Header 3 */
     font-size: 20px;
     font-weight: 500;
@@ -346,6 +337,7 @@ footer{
 }
 .project-list-item-category{
     /* Body */
+    color: var(--slate);
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.32px;
